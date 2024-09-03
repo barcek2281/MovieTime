@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html, body {
     margin: 0;
     padding: 0;
@@ -44,10 +45,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
+/*main {
     flex: 1;
     padding: 20px;
-}
+}*/
 
 footer {
 	background-color: #ebebeb;
@@ -66,20 +67,19 @@ footer a:hover {
 	text-decoration: underline;
 }
 
-#lists img {
+img.content-img{
     width: 200px;
-    height: 300px;
-    margin: 10px 0; 
-    display: block;
-	align-items: center;
+        height: 300px;
+        margin: 0px 40px 20px 0px; 
+        display: block;
+        align-items: center;
+
 }
 
-figure img {
-	width: 350px;
-    height: 400px;
-    margin: 10px 0; 
-    display: block;
-	align-items: center;
+figure.content-figure{
+    clear: right;
+    float: right;
+    width: 15  em;
 }
 
 input[type=submit], input[type=reset]{
@@ -109,4 +109,30 @@ div.quote{
     margin: 10px auto;
       padding: 15px;
   border-radius: 5px;
+}
+
+ol {
+    list-style-type: decimal;
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+ul {
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+div.movie {
+    display: flex;
+    align-items: flex-start; /* Выровнять по верхнему краю */
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+
+}
+
+div.description{
+    flex: 2; /* Занимает больше пространства */
+    margin-right: 20px;
 }

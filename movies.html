@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Home</title>
+	<title>Movies</title>
 </head>
 <body>
+
 	<header>
 		<h1>MovieTime</h1>
 		<nav>
@@ -17,24 +18,73 @@
 		</nav>
 	</header>
 
+
 	<main>
+			<ol>
+				<li><a href="#marvel-list">	Marvel movies list</a></li>
+				<ol>
+					<li><a href="">Iron man</a></li>
+					<li><a href="">Avengers</a></li>
+					<li><a href="">Spider-man</a></li>
+				</ol>
+				<li><a href="#Most-paid">Most paid actors</a></li>
+				<ul>
+					<li><a href="">Robert Downey JR.</a></li>
+					<li><a href="">Chris Evans</a></li>
+					<li><a href="">Scarlett Johansson</a></li>
+				</ul>
+			</ol>
+
+		<br><hr><br>
+
 		<section id="lists">
-			<h2>Marvel movies list</h2>
-			<ul>
-				<li><h3>Iron man</h3></li>
-				<img src="image/iron_man.jpg" alt="avengers_inf_war">
-				<li><h3>Avengers</h3></li>
-				<img src="image/avg.jpg" alt="avengers">
-				<li><h3>Hulk</h3></li>
-				<img src="image/hulk.jpg" alt="avengers_altron">
-			</ul>
+			<h2 id="marvel-list">Marvel movies list</h2>
+				<div class="movie">
+				<figure class="content-figure">
+					<img class="content-img" src="image/iron_man.jpg" alt="iron_man" >
+					<figcaption>(Iron man poster)</figcaption>
+				</figure>
+				<div class="description">
+				<h3>Iron man</h3>
+				<p>Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the first film in the Marvel Cinematic Universe (MCU).</p>
+				</div>
+				</div>
+
+
+				<br>
+				<div class="movie">
+					<figure class="content-figure">
+						<img class="content-img" src="image/avg.jpg" alt="iron_man"><figcaption>Avengers</figcaption>
+					</figure>
+					<div class="description">
+						<h3>Avengers</h3>
+						<p>Marvel's The Avengers[5] (titled Marvel Avengers Assemble in the United Kingdom and Ireland[1][6] and commonly referred to as simply The Avengers) is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures,[a] it is the sixth film in the Marvel Cinematic Universe (MCU).</p>
+					</div>
+
+				</div>
+
+
+				<br>
+				<div class="movie">
+					<figure class="content-figure">
+						<img class="content-img" src="image/spider-man.jpg" alt="Spider-man"><figcaption>poster of Spider-man <cite>(2002)<cite></figcaption>
+					</figure>
+
+
+					<div class="description">
+						<h3>Spider-man (2002)</h3>
+						<p>Spider-Man is a 2002 American superhero film based on the Marvel Comics character Spider-Man. Directed by Sam Raimi from a screenplay by David Koepp, it is the first installment in Raimi's Spider-Man trilogy. The film stars Tobey Maguire, Willem Dafoe, Kirsten Dunst, James Franco, Cliff Robertson, and Rosemary Harris.</p>
+					</div>
+				</div>
+
 			<hr>
-			<h2>Most paid actors</h2>
+			<h2 id="Most-paid">Marvel movies list</h2>
+			<!--
 			<ol>
 				<li><h3>Robert Downey JR.</h3><img src="image/robert.jpg" alt="robert"></li>
 				<li><h3>Chris Evans</h3><img src="image/chris.jpg" alt="chris"></li>
 				<li><h3>Scarlett Johansson</h3><img src="image/scarlett.jpg" alt="scarlett"></li>
-			</ol>
+			</ol> -->
 		</section>
 	</main>
 
