@@ -67,8 +67,16 @@ footer a:hover {
 }
 
 #lists img {
-    width: 400px;
-    height: auto;
+    width: 200px;
+    height: 300px;
+    margin: 10px 0; 
+    display: block;
+	align-items: center;
+}
+
+figure img {
+	width: 350px;
+    height: 400px;
     margin: 10px 0; 
     display: block;
 	align-items: center;
@@ -91,8 +99,8 @@ main.profile{
 }
 
 textarea{
-    border-radius: 5px;
-  border: 1px solid #ccc;
-  display:block;
+	border-radius: 5px;
+  	border: 1px solid #ccc;
+  	display:block;
 }
 
