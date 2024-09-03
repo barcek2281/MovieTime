@@ -3,35 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Kino</title>
 </head>
 <body style="background-color:powderblue;">
     <header>
-        <h1>Home</h1>
-        <nav am-layout="horizontal">
+        <h1>MovieTime</h1>
+        <nav>
             <a href="index.html">Home</a> |
-            <a href="#">About</a> |
-            <a href="#">Products</a> |
-            <a href="#">Contact</a> |
+            <a href="#">Movies</a> |
+            <a href="profile.html">Profile</a> |
+            <a href="#">About</a> 
         </nav>
     </header>
-    <hr>
-    <main>
-        <img src="image/zdun.jpg" alt="123"><br><br>
+    <br>
 
+    <h2 id="profile-page">Profile page</h2>
+    <main class="profile">
+        <img src="image/profile-icon-9.png" alt="profile-icon" width="150" height="150"><br><br>
+
+        <form action="">
         <label for="image_profile">Choose new image for profile:</label>
         <input type="file" id="image_profile" name="image_profile"><br><br>
 
         <label for="username">Username: </label>
-        <input type="text" id="username" name="username"><br><br>
+        <input type="text" id="username" name="username" value=""><br><br>
 
         <label for="p1">Password: </label>
-        <input type="text" id="p1" name="p1"><br><br>
+        <input type="text" id="p1" name="p1" value=""><br><br>
 
         <label for="p2">Confirm password: </label>
-        <input type="text" id="p2" name="p2"><br><br>
+        <input type="text" id="p2" name="p2" value=""><br><br>
 
-
+        <label for="gender">select your gender: </label>
+        <select name="select" id="">
+            <option value="Female">Female</option>
+            <option value="Male">Male</option>
+            <option value="Non-binary">Non-binary</option>
+        </select><br><br>
+        
+        <label for="information">write something about yourself: </label>
+        <textarea name="information" id="information" maxlength="512" cols="33" rows="7">i very really like a james bond movies...</textarea><br>
+        
+        <input type="submit" value="Submit" id="profile-submit">
+        <input type="reset" value="Reset">
+        </form>
 
     </main>
 
