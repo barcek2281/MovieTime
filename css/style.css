@@ -50,8 +50,9 @@ main {
 }
 
 footer {
-	background-color: #e1d3d3;
+	background-color: #74e1e9;
 	text-align: center;
+    margin-top: auto;
 	padding: 10px;
 	width: 100%;
 }
@@ -65,6 +66,25 @@ footer a:hover {
 	text-decoration: underline;
 }
 
+input[type=submit], input[type=reset]{
+    background-color: #4583d4;
+    padding: 12px 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
 
+#profile-page{
+    margin: 0 auto;
+}
 
+main.profile{
+    margin: 0 auto;
+}
+
+textarea{
+    border-radius: 5px;
+  border: 1px solid #ccc;
+  display:block;
+}
 
