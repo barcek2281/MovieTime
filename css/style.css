@@ -50,7 +50,7 @@ main {
 }
 
 footer {
-	background-color: #74e1e9;
+	background-color: #ebebeb;
 	text-align: center;
     margin-top: auto;
 	padding: 10px;
@@ -104,3 +104,9 @@ textarea{
   	display:block;
 }
 
+div.quote{
+    background-color: #ededed;
+    margin: 10px auto;
+      padding: 15px;
+  border-radius: 5px;
+}
