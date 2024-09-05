@@ -3,56 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - MovieTime</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>Kino</title>
 </head>
 <body>
+<!-- В ПРИНЦИПЕ ИМБА. МНЕ НРАВИТСЯ(adilzhan) -->
     <header>
         <h1>MovieTime</h1>
         <nav>
             <a href="index.html">Home</a> |
-			<a href="movies.html">Movies</a> |
-			<a href="profile.html">Profile</a> |
-			<a href="about.html">About</a>
+            <a href="movies.html">Movies</a> |
+            <a href="profile.html">Profile</a> |
+            <a href="about.html">About</a> |
+            <a href="reviews.html">Reviews</a> |
+            <a href="news.html">News</a>
         </nav>
     </header>
-    <br>
 
-    <h2 id="profile-page">Profile page</h2>
     <main class="profile">
-        <img src="image/profile-icon-9.png" alt="profile-icon" width="150" height="150"><br><br>
+        <h2>Profile Page</h2>
+        <img src="image/profile-icon-9.png" alt="Profile Icon">
 
-        <form action="">
-        <label for="image_profile">Choose new image for profile:</label>
-        <input type="file" id="image_profile" name="image_profile"><br><br>
+        <form>
+            <label for="image_profile">Choose new image for profile:</label>
+            <input type="file" id="image_profile" name="image_profile">
 
-        <label for="username">Username: </label>
-        <input type="text" id="username" name="username" value=""><br><br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
 
-        <label for="p1">Password: </label>
-        <input type="text" id="p1" name="p1" value=""><br><br>
+            <label for="p1">Password:</label>
+            <input type="password" id="p1" name="p1">
 
-        <label for="p2">Confirm password: </label>
-        <input type="text" id="p2" name="p2" value=""><br><br>
+            <label for="p2">Confirm Password:</label>
+            <input type="password" id="p2" name="p2">
 
-        <label for="gender">select your gender: </label>
-        <select name="select" id="">
-            <option value="Female">Female</option>
-            <option value="Male">Male</option>
-            <option value="Non-binary">Non-binary</option>
-        </select><br><br>
-        
-        <label for="information">write something about yourself: </label>
-        <textarea name="information" id="information" maxlength="512" cols="33" rows="7">i very really like a james bond movies...</textarea><br>
-        
-        <input type="submit" value="Submit" id="profile-submit">
-        <input type="reset" value="Reset">
+            <label for="gender">Select your gender:</label>
+            <select name="gender" id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Non-binary">Non-binary</option>  <!-- для геев(adilzhan)-->
+            </select>
+
+            <label for="information">Write something about yourself:</label>
+            <textarea name="information" id="information" maxlength="512" cols="30" rows="5">I really like James Bond movies...</textarea>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </form>
-
     </main>
 
     <footer>
-        <p>Academic Free License v3.0</p>
+        <p>All rights reserved. Team members: Ayanat, Ernar</p>
+        <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p>
     </footer>
+
 </body>
 </html>

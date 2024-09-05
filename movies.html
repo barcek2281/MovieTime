@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Movies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Marvel movies and discover the highest-paid actors in Hollywood.">
+    <title>Movies - MovieTime</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>MovieTime</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="movies.html">Movies</a> |
+            <a href="profile.html">Profile</a> |
+            <a href="about.html">About</a> |
+            <a href="reviews.html">Reviews</a> |
+            <a href="news.html">News</a>
+        </nav>
+    </header>
 
-	<header>
-		<h1>MovieTime</h1>
-		<nav>
-			<a href="index.html">Home</a> |
-			<a href="movies.html">Movies</a> |
-			<a href="profile.html">Profile</a> |
-			<a href="about.html">About</a>
-		</nav>
-	</header>
+    <main>
+        <aside>
+            <h2>Contents</h2>
+            <ul>
+                <li><a href="#marvel-list">Marvel Movies List</a></li>
+                <li><a href="#most-paid">Most Paid Actors</a></li>
+            </ul>
+        </aside>
 
+        <section id="lists">
+            <h2 id="marvel-list">Marvel Movies List</h2>
+            <article class="movie">
+                <figure class="content-figure">
+                    <img class="content-img" src="image/iron_man.jpg" alt="Iron Man Poster">
+                    <figcaption>Iron Man Poster</figcaption>
+                </figure>
+                <div class="description">
+                    <h3>Iron Man</h3>
+                    <p>Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the first film in the Marvel Cinematic Universe (MCU).</p>
+                </div>
+            </article>
 
-	<main>
-			<ol>
-				<li><a href="#marvel-list">	Marvel movies list</a></li>
-				<ol>
-					<li><a href="">Iron man</a></li>
-					<li><a href="">Avengers</a></li>
-					<li><a href="">Spider-man</a></li>
-				</ol>
-				<li><a href="#Most-paid">Most paid actors</a></li>
-				<ul>
-					<li><a href="">Robert Downey JR.</a></li>
-					<li><a href="">Chris Evans</a></li>
-					<li><a href="">Scarlett Johansson</a></li>
-				</ul>
-			</ol>
+            <article class="movie">
+                <figure class="content-figure">
+                    <img class="content-img" src="image/avg.jpg" alt="Avengers Poster">
+                    <figcaption>Avengers Poster</figcaption>
+                </figure>
+                <div class="description">
+                    <h3>Avengers</h3>
+                    <p>Marvel's The Avengers (also known as Marvel Avengers Assemble in the UK) is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. It is the sixth film in the Marvel Cinematic Universe (MCU).</p>
+                </div>
+            </article>
 
-		<br><hr><br>
-
-		<section id="lists">
-			<h2 id="marvel-list">Marvel movies list</h2>
-				<div class="movie">
-				<figure class="content-figure">
-					<img class="content-img" src="image/iron_man.jpg" alt="iron_man" >
-					<figcaption>(Iron man poster)</figcaption>
-				</figure>
-				<div class="description">
-				<h3>Iron man</h3>
-				<p>Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the first film in the Marvel Cinematic Universe (MCU).</p>
-				</div>
-				</div>
-
-
-				<br>
-				<div class="movie">
-					<figure class="content-figure">
-						<img class="content-img" src="image/avg.jpg" alt="iron_man"><figcaption>Avengers</figcaption>
-					</figure>
-					<div class="description">
-						<h3>Avengers</h3>
-						<p>Marvel's The Avengers[5] (titled Marvel Avengers Assemble in the United Kingdom and Ireland[1][6] and commonly referred to as simply The Avengers) is a 2012 American superhero film based on the Marvel Comics superhero team of the same name. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures,[a] it is the sixth film in the Marvel Cinematic Universe (MCU).</p>
+            <article class="movie">
+                <figure class="content-figure">
+                    <img class="content-img" src="image/spider-man.jpg" alt="Spider-Man Poster">
+                    <figcaption>Spider-Man Poster (2002)</figcaption>
+                </figure>
+                <div class="description">
+                    <h3>Spider-Man (2002)</h3>
+                    <p>Spider-Man is a 2002 American superhero film based on the Marvel Comics character Spider-Man. Directed by Sam Raimi, it is the first installment in Raimi's Spider-Man trilogy, featuring Tobey Maguire as the lead.</p>
+                </div>
+            </article>
+        </section>
+<!-- можете добавить еще кого-нибуль,  а то пусто выглядит(адильжаН) -->
+        <section id="most-paid">
+            <h2>Most Paid Actors</h2>
+            <ul>
+                <li class="news-item actor-info">
+                    <img src="image/robert.jpg" alt="Robert Downey Jr.">
+                    <div>
+                        <h3>Robert Downey Jr.</h3>
+                        <p>Known for his role as Iron Man in the Marvel Cinematic Universe, Robert Downey Jr. has been a leading figure in Hollywood with numerous accolades and a massive fan following.</p>
+                    </div>
+                </li>
+                <li class="news-item actor-info">
+                    <img src="image/chris.jpg" alt="Chris Evans">
+                    <div>
+                        <h3>Chris Evans</h3>
+                        <p>Famous for his portrayal of Captain America, Chris Evans has earned critical acclaim and has been a major box-office draw with his compelling performances in action and drama films.</p>
+                    </div>
+                </li>
+                <li class="news-item actor-info">
+                    <img src="image/scarlett.jpg" alt="Scarlett Johansson">
+                    <div>
+                        <h3>Scarlett Johansson</h3>
+                        <p>Scarlett Johansson has gained worldwide recognition for her roles in both independent films and major franchises, including her iconic performance as Black Widow in the MCU.</p>
+						<p>e</p>
+						<p>e</p>
 					</div>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-				</div>
-
-
-				<br>
-				<div class="movie">
-					<figure class="content-figure">
-						<img class="content-img" src="image/spider-man.jpg" alt="Spider-man"><figcaption>poster of Spider-man <cite>(2002)<cite></figcaption>
-					</figure>
-
-
-					<div class="description">
-						<h3>Spider-man (2002)</h3>
-						<p>Spider-Man is a 2002 American superhero film based on the Marvel Comics character Spider-Man. Directed by Sam Raimi from a screenplay by David Koepp, it is the first installment in Raimi's Spider-Man trilogy. The film stars Tobey Maguire, Willem Dafoe, Kirsten Dunst, James Franco, Cliff Robertson, and Rosemary Harris.</p>
-					</div>
-				</div>
-
-			<hr>
-			<h2 id="Most-paid">Marvel movies list</h2>
-			<!--
-			<ol>
-				<li><h3>Robert Downey JR.</h3><img src="image/robert.jpg" alt="robert"></li>
-				<li><h3>Chris Evans</h3><img src="image/chris.jpg" alt="chris"></li>
-				<li><h3>Scarlett Johansson</h3><img src="image/scarlett.jpg" alt="scarlett"></li>
-			</ol> -->
-		</section>
-	</main>
-
-	<footer>
-		<p>All rights deserved. Team members: Ayanat, Ernar</p>
-		<link href="https://github.com/barcek2281/FrontEndAssigment">
-	</footer>
+    <footer>
+        <p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
+        <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p>
+    </footer>
 </body>
 </html>

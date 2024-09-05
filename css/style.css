@@ -1,138 +1,101 @@
-* {
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f0f0f0;
 }
 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
-html, body {
+header h1 {
     margin: 0;
-    padding: 0;
-    height: 100%;
+    font-size: 2em; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+aside {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.movie {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.content-figure {
+    margin-right: 10px;
+}
+
+.content-img {
+    max-width: 100px;
+    max-height: 150px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+}
+
+form {
     display: flex;
     flex-direction: column;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+form label {
+    margin-top: 10px;
 }
 
-header {
-    background-color: #333; 
-    color: white; 
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+form input, form textarea, form select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 18px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/*main {
-    flex: 1;
-    padding: 20px;
-}*/
-
-footer {
-	background-color: #ebebeb;
-	text-align: center;
-    margin-top: auto;
-	padding: 10px;
-	width: 100%;
-}
-
-footer a {
-	color: #007bff;
-	text-decoration: none;
-}
-
-footer a:hover {
-	text-decoration: underline;
-}
-
-img.content-img{
-    width: 200px;
-        height: 300px;
-        margin: 0px 40px 20px 0px; 
-        display: block;
-        align-items: center;
-
-}
-
-figure.content-figure{
-    clear: right;
-    float: right;
-    width: 15  em;
-}
-
-input[type=submit], input[type=reset]{
-    background-color: #4583d4;
-    padding: 12px 16px;
-    cursor: pointer;
-    color: white;
+form input[type="submit"], form input[type="reset"] {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
     border: none;
+    cursor: pointer;
 }
 
-#profile-page{
-    margin: 0 auto;
-}
-
-main.profile{
-    margin: 0 auto;
-}
-
-textarea{
-	border-radius: 5px;
-  	border: 1px solid #ccc;
-  	display:block;
-}
-
-div.quote{
-    background-color: #ededed;
-    margin: 10px auto;
-      padding: 15px;
-  border-radius: 5px;
-}
-
-ol {
-    list-style-type: decimal;
-    margin-inline-start: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-}
-
-ul {
-    margin-inline-start: 0px;
-    padding-inline-start: 40px;
-    unicode-bidi: isolate;
-}
-div.movie {
-    display: flex;
-    align-items: flex-start; /* Выровнять по верхнему краю */
-    background-color: white;
-    margin: 20px;
-    padding: 15px;
-
-}
-
-div.description{
-    flex: 2; /* Занимает больше пространства */
-    margin-right: 20px;
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+    background-color: #575757;
 }
