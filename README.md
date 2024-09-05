@@ -1,4 +1,4 @@
 
 # Front End Assigment
 
-Khanaphin Ernar & Zhunis Ayanat assigment
+Khanaphin Ernar, Adilzhan Kurmet and Zhunis Ayanat's assigment
