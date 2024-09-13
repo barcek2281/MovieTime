@@ -3,43 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Home - MovieTime</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     
-    <header>
+    <header id="main-header">
         <h1>MovieTime</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="movies.html">Movies</a> |
-            <a href="profile.html">Profile</a> |
-            <a href="about.html">About</a> |
-            <a href="reviews.html">Reviews</a> |
-            <a href="news.html">News</a>
+        <nav id="main-nav" class="nav-section">
+            <a class="nav-link" href="index.html">Home</a> |
+            <a class="nav-link" href="movies.html">Movies</a> |
+            <a class="nav-link" href="profile.html">Profile</a> |
+            <a class="nav-link" href="about.html">About</a> |
+            <a class="nav-link" href="reviews.html">Reviews</a> |
+            <a class="nav-link" href="news.html">News</a>
         </nav>
     </header>
 
 
 
-    <main>
-        <section id="marvel-cinematic-universe">
-            <h2>Marvel Cinematic Universe</h2>
-			<p>The Marvel Cinematic Universe (<i>MCU</i>) is a media franchise and shared universe centered around a series of superhero films and television series produced by Marvel Studios. It is based on characters from American comic books published by Marvel Comics. The MCU is divided into phases, each consisting of interconnected stories and characters. The franchise began with <strong>"Iron Man"</strong> in 2008 and has since grown to include numerous films and TV series, featuring iconic characters such as Iron Man, Captain America, Thor, Black Widow, and the Avengers. The MCU is renowned for its epic storytelling, elaborate world-building, and successful crossover events.</p>
-            <figure>
-                <img src="image/kevin_feige.jpg" alt="Kevin Feige" style="width:15%; height:15%;">  <!-- отредактируйте лицо аутиста. оно не нравится мне (adilzhan)-->
-                <figcaption>Producer: Kevin Feige</figcaption>
-            </figure>
+    <main id="main-content">
+        <section id="marvel-cinematic-universe" class="universe-section">
+            <h2 class="section-title">Marvel Cinematic Universe</h2>
+			<p class="section-description">The Marvel Cinematic Universe (<i>MCU</i>) is a media franchise and shared universe centered around a series of superhero films and television series produced by Marvel Studios. It is based on characters from American comic books published by Marvel Comics. The MCU is divided into phases, each consisting of interconnected stories and characters. The franchise began with <strong>"Iron Man"</strong> in 2008 and has since grown to include numerous films and TV series, featuring iconic characters such as Iron Man, Captain America, Thor, Black Widow, and the Avengers. The MCU is renowned for its epic storytelling, elaborate world-building, and successful crossover events.</p>
+            <div class="producer-container">
+				<img src="image/kevin_feige.jpg" alt="Producer Photo" class="producer-photo">
+				<div class="producer-info">
+                    <p class="producer-name">Producer: Kevin Feige</p>
+                </div>
+			</div>
         </section>
     </main>
 
-    <footer>
-        <p>All rights reserved. Team members: Ayanat, Ernar and Adilzhan</p>
-        <!-- <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p> -->
+    <footer id="main-footer">
+        <p class="footer-text">All rights reserved. Team members: Ayanat, Ernar and Adilzhan</p>
+        <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p>
     </footer>
 
 </body>
