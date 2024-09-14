@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile - MovieTime</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
 </head>
 <body>
 <!-- В ПРИНЦИПЕ ИМБА. МНЕ НРАВИТСЯ(adilzhan) -->
@@ -20,37 +20,45 @@
         </nav>
     </header>
 
-    <main >
+    <div class="profile">
+        
         <h2>Profile Page</h2>
-        <img src="image/profile-icon-9.png" alt="Profile Icon">
-
         <form>
-            <label for="image_profile">Choose new image for profile:</label>
-            <input type="file" id="image_profile" name="image_profile">
+            <img src="image/profile-icon-9.png" alt="Profile Icon">
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </div>
 
-            <label for="p1">Password:</label>
-            <input type="password" id="p1" name="p1">
+            <div class="form-group">
+                <label for="p1">Password:</label>
+                <input type="password" id="p1" name="p1">
+            </div>
 
-            <label for="p2">Confirm Password:</label>
-            <input type="password" id="p2" name="p2">
+            <div class="form-group">
+                <label for="p2">Confirm Password:</label>
+                <input type="password" id="p2" name="p2">
+            </div>
 
-            <label for="gender">Select your gender:</label>
-            <select name="gender" id="gender">
-                <option value="Female">Female</option>
-                <option value="Male">Male</option>
-                <option value="Non-binary">Non-binary</option>  <!-- для геев(adilzhan)-->
-            </select>
+            <div class="form-group">
+                <label for="gender">Select your gender:</label>
+                <select name="gender" id="gender">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                    <option value="Non-binary">Non-binary</option>  <!-- для геев(adilzhan)-->
+                </select>
+            </div>
 
-            <label for="information">Write something about yourself:</label>
-            <textarea name="information" id="information" maxlength="512" cols="30" rows="5">I really like James Bond movies...</textarea>
+            <div class="form-group">
+                <label for="information">Write something about yourself:</label>
+                <textarea name="information" id="information" maxlength="512" cols="30" rows="5">I really like James Bond movies...</textarea>
+            </div>
 
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </form>
-    </main>
+    </div>
 
     <footer>
         <p>All rights reserved. Team members: Ayanat, Ernar and Adilzhan</p>

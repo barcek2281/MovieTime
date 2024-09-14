@@ -1,0 +1,47 @@
+@import url('style.css');
+
+div.profile{
+    padding: 20px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+form .form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    flex: 0 0 150px; 
+    margin-top: 10px;
+}
+
+form img{
+    width: 270px;
+    height: 270px;
+    float: left;
+}
+
+form input, form textarea, form select {
+    display: 1;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 400px;
+    resize: none;
+
+}
+
+form input[type="submit"], form input[type="reset"] {
+    margin-top: 10px;
+    width: 420px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+
