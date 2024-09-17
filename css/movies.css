@@ -59,7 +59,7 @@ footer {
 
 .movie {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 20px; 
 	background-color: #ccc;
 	border-radius: 10px;
 	padding: 10px;
