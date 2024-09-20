@@ -3,68 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore movies and discover the highest-paid actors in Hollywood.">
     <title>Profile - MovieTime</title>
     <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="icon" href="image/icons/favicon-16x16.png">
 </head>
 <body>
 <!-- В ПРИНЦИПЕ ИМБА. МНЕ НРАВИТСЯ(adilzhan) -->
-    <header>
-        <h1>MovieTime</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="movies.html">Movies</a> |
-            <a href="profile.html">Profile</a> |
-            <a href="about.html">About</a> |
-            <a href="reviews.html">Reviews</a> |
-            <a href="news.html">News</a>
-        </nav>
+    <header id="main-header" class="navbar navbar-expand-lg fixed-top bg-dark">
+        <a class="navbar-brand text-white ms-4" href="#" style="font-size: 20px;"><b>MovieTime</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-4" id="navbarNav">
+            <nav id="main-nav me-4" class="navbar-nav ms-auto">
+                <a class="nav-item nav-link text-white" href="index.html">Home</a>
+                <a class="nav-item nav-link text-white" href="movies.html">Movies</a>
+                <a class="nav-item nav-link text-white" href="profile.html">Profile</a>
+                <a class="nav-item nav-link text-white" href="about.html">About</a>
+                <a class="nav-item nav-link text-white" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link text-white" href="news.html">News</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="profile">
+    <h1>Profile page</h1>
+
+    <form action="">
+
+
+
         
-        <h2>Profile Page</h2>
-        <form>
-            <img src="image/icons/profile-icon-9.png" alt="Profile Icon">
+    </form>
 
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username">
-            </div>
+    <footer id="footer" class="text-center mt-5 py-4 bg-dark">
+		<p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
+	</footer>
 
-            <div class="form-group">
-                <label for="p1">Password:</label>
-                <input type="password" id="p1" name="p1">
-            </div>
-
-            <div class="form-group">
-                <label for="p2">Confirm Password:</label>
-                <input type="password" id="p2" name="p2">
-            </div>
-
-            <div class="form-group">
-                <label for="gender">Select your gender:</label>
-                <select name="gender" id="gender">
-                    <option value="Female">Female</option>
-                    <option value="Male">Male</option>
-                    <option value="Non-binary">Non-binary</option>  <!-- для геев(adilzhan)-->
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="information">Write something about yourself:</label>
-                <textarea name="information" id="information" maxlength="512" cols="30" rows="5">I really like James Bond movies...</textarea>
-            </div>
-
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-        </form>
-    </div>
-
-    <footer>
-        <p>All rights reserved. Team members: Ayanat, Ernar and Adilzhan</p>
-        <!-- <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p> -->
-    </footer>
-
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
