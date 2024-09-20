@@ -28,15 +28,71 @@
         </div>
     </header>
 
-    <h1>Profile page</h1>
 
-    <form action="">
+    <div class="container mt-5 pt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header text-center">
+                <h2>Profile Settings</h2>
+              </div>
+              <div class="card-body">
+                <div class="row">
 
+                  <div class="col-md-8">
+                    <form>
+                      <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                      </div>
 
+                      <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter new password">
+                      </div>
+    
+                      <!-- развитые мы люди (Ayanat) -->
+                      <div class="mb-3">
+                        <label for="gender" class="form-label">Your gender</label>
+                        <select multiple class="form-control" id="gender">
+                          <option>Female</option>
+                          <option>Male</option>
+                          <option>Non-binary</option>
 
-        
-    </form>
+                        </select>
+                      </div>
+    
+                      <!-- Submit Button -->
+                      <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Update Profile</button>
+                      </div>
+                    </form>
+                  </div>
+    
 
+                  <div class="col-md-4 text-center">
+
+                    <img id="profilePreview" src="image/icons/profile-icon-9.png" alt="Profile Picture">
+                    
+                    <div class="mt-3">
+                      <label for="profilePic" class="form-label">Profile Picture</label>
+                      <input class="form-control" type="file" id="profilePic" style="width: 100%;">
+                    </div>
+                    
+                  </div>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
     <footer id="footer" class="text-center mt-5 py-4 bg-dark">
 		<p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
 	</footer>

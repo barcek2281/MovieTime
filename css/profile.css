@@ -2,3 +2,12 @@
     color:aliceblue;
     height: 80px;
 }
+
+input.form-control{
+    width: 400px;
+}
+
+#profilePreview{
+    height: 150px;
+    width: 150px;
+}
