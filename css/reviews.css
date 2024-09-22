@@ -1,18 +1,12 @@
-@import url("style.css");
+@import url("style.css"); /* Основные стили из style.css */
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"); /* Подключение Bootstrap */
 
-.review img:hover {
-    transform: scale(1.05);
-    transition: all 0.3s ease;
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.review {
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease;
-}
-.review:hover {
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }

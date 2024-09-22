@@ -1,41 +1,27 @@
-@import url("style.css");
+@import url("style.css"); /* Основные стили из style.css */
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"); /* Подключение Bootstrap */
 
-#news-banner {
-    background-color: #4CAF50;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
+.card-body {
+    padding: 15px;
 }
-.oscar-highlight {
-    color: #D4AF37;
-    font-weight: bold;
+
+.card-title {
+    font-size: 1.5rem;
+    color: #000000;
 }
-#news-banner {
-    background-color: #ffd000;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+.card-text {
+    font-size: 1.1rem;
+    color: #555;
 }
-.oscar-highlight {
-    color: #D4AF37;
-    font-weight: bold;
-    background-color: #ffffff;
-    padding: 5px;
-    border-radius: 5px;
+.card {
+    background-color: #ffffff; 
+    border: none; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease; 
 }
-.news-item {
-    padding: 20px;
-    border-left: 5px solid #ffd000;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-.news-item:hover {
-    transform: translateX(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); 
 }

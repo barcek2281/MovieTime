@@ -6,49 +6,73 @@
     <link rel="stylesheet" href="css/news.css">
     <link rel="icon" href="image/icons/favicon-16x16.png">
     <title>News - MovieTime</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>MovieTime</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="movies.html">Movies</a> |
-            <a href="profile.html">Profile</a> |
-            <a href="about.html">About</a> |
-            <a href="reviews.html">Reviews</a> |
-            <a href="news.html">News</a>
-        </nav>
-    </header>
+    <header id="main-header" class="navbar navbar-expand-lg fixed-top bg-dark">
+		<a class="navbar-brand text-white ms-4" href="#" style="font-size: 20px;"><b>MovieTime</b></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse me-4" id="navbarNav">
+			<nav id="main-nav me-4" class="navbar-nav ms-auto">
+				<a class="nav-item nav-link text-white" href="index.html">Home</a>
+				<a class="nav-item nav-link text-white" href="movies.html">Movies</a>
+				<a class="nav-item nav-link text-white" href="profile.html">Profile</a>
+				<a class="nav-item nav-link text-white" href="about.html">About</a>
+				<a class="nav-item nav-link text-white" href="reviews.html">Reviews</a>
+				<a class="nav-item nav-link text-white" href="news.html">News</a>
+			</nav>
+		</div>
+	</header>
 
     <main>
         <h2>Latest Movie News</h2>
 
-        <article class="news-item">
-            <h3>Marvel Studios Announces New Phase of MCU</h3>
-            <p>Marvel Studios has officially announced the next phase of the Marvel Cinematic Universe, introducing new heroes and exciting storylines. With a mix of fresh faces and returning favorites, the new phase promises to expand the MCU like never before. Fans are eagerly anticipating the upcoming releases, which include the highly anticipated "Celestial Guardians," the mysterious "Dark Horizon," and the return of fan-favorite characters in "Avengers: Reassemble." The future of the MCU looks brighter than ever!</p>
-        </article>
-
-        <hr>
-
-        <article class="news-item">
-            <h3>Oscar Buzz: Top Contenders for Best Picture</h3>
-            <p>As awards season approaches, several films are generating buzz for the coveted Best Picture award. From powerful dramas to innovative comedies, this year's competition is fierce. Our top contenders include the emotionally charged "Echoes of Silence," the visually stunning "Aurora Nights," and the thought-provoking "Fragments of Truth." With predictions already flying, it's shaping up to be an exciting race to the Oscars.</p>
-
-        </article>
-
-        <hr>
-
-        <article class="news-item">
-            <h3>Behind the Scenes: The Making of a Blockbuster</h3>
-            <p>The upcoming sci-fi epic "Stellar Horizon" is rumored to set a new standard in visual effects, with groundbreaking technology being used to create stunning, realistic space environments. The film, directed by the visionary filmmaker Sarah Harper, has already generated significant buzz in the industry. Early previews suggest that "Stellar Horizon" could be a game-changer in the world of cinema, pushing the boundaries of what’s possible on the big screen.</p>
-        </article>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12 mb-4">
+                <div class="card h-100">
+                  <img src="image/images.jpg" class="card-img-top" alt="Marvel Studios">
+                  <div class="card-body">
+                    <h5 class="card-title">Marvel Studios Announces New Phase of MCU</h5>
+                    <p class="card-text">Marvel Studios has officially announced the next phase of the Marvel Cinematic Universe, introducing new heroes and exciting storylines. With a mix of fresh faces and returning favorites, the new phase promises to expand the MCU like never before. Fans are eagerly anticipating the upcoming releases, which include the highly anticipated "Celestial Guardians," the mysterious "Dark Horizon," and the return of fan-favorite characters in "Avengers: Reassemble." The future of the MCU looks brighter than ever!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 mb-4">
+                <div class="card h-100">
+                  <img src="image/boom.jpg" class="card-img-top" alt="Oscar Buzz">
+                  <div class="card-body">
+                    <h5 class="card-title">Oscar Buzz: Top Contenders for Best Picture</h5>
+                    <p class="card-text">As awards season approaches, several films are generating buzz for the coveted Best Picture award. From powerful dramas to innovative comedies, this year's competition is fierce. Our top contenders include the emotionally charged "Echoes of Silence," the visually stunning "Aurora Nights," and the thought-provoking "Fragments of Truth." With predictions already flying, it's shaping up to be an exciting race to the Oscars.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 mb-4">
+                <div class="card h-100">
+                  <img src="image/vorpe.jpg" class="card-img-top" alt="Behind the Scenes">
+                  <div class="card-body">
+                    <h5 class="card-title">Behind the Scenes: The Making of a Blockbuster</h5>
+                    <p class="card-text">The upcoming sci-fi epic "Stellar Horizon" is rumored to set a new standard in visual effects, with groundbreaking technology being used to create stunning, realistic space environments. The film, directed by the visionary filmmaker Sarah Harper, has already generated significant buzz in the industry. Early previews suggest that "Stellar Horizon" could be a game-changer in the world of cinema, pushing the boundaries of what’s possible on the big screen.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          
     </main>
 <!-- я хз че тут написано, лень было сочинять(адиль) -->
     <footer>
         <p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
         <!-- <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p> -->
     </footer>
-    
+    <script src="js/bootstrap.js"></script>
+
 </body>
 </html>
 
