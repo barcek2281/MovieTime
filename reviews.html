@@ -5,49 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews - MovieTime</title>
 	<link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
 </head>
 <body>
-    <header>
-        <h1>MovieTime</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="movies.html">Movies</a> |
-            <a href="profile.html">Profile</a> |
-            <a href="about.html">About</a> |
-            <a href="reviews.html">Reviews</a> |
-            <a href="news.html">News</a>
-        </nav>
+    <header id="main-header" class="navbar navbar-expand-lg fixed-top bg-dark">
+        <a class="navbar-brand text-white ms-4" href="#" style="font-size: 20px;"><b>MovieTime</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-4" id="navbarNav">
+            <nav id="main-nav me-4" class="navbar-nav ms-auto">
+                <a class="nav-item nav-link text-white" href="index.html">Home</a>
+                <a class="nav-item nav-link text-white" href="movies.html">Movies</a>
+                <a class="nav-item nav-link text-white" href="profile.html">Profile</a>
+                <a class="nav-item nav-link text-white" href="about.html">About</a>
+                <a class="nav-item nav-link text-white" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link text-white" href="news.html">News</a>
+            </nav>
+        </div>
     </header>
     <main>
         <h2>Movie Reviews</h2>
-        <section class="review">
-            <h3>Spider Man: Into the spiderverse (2021)</h3>
-            <img src="image/into_the_spiderverse.png" alt="into_the_spiderverse" style="width:15%; height:15%;"> 
-            <p>Perfect! I enjoyed the movie</p>
-            <p><strong>Rating:</strong> 4.5/5</p>
-            <p><strong>Reviewer:</strong> Joe Rogan</p>
-        </section>
-        <hr>
-        <section class="review">
-            <h3>Prisoners (2017)</h3>
-            <img src="image/prisoners.jpg" alt="prisoners" style="width:15%; height:15%;"> 
-            <p>Very exciting plot twist! I was confused at the end :(</p>
-            <p><strong>Rating:</strong> 4/5</p>
-            <p><strong>Reviewer:</strong> Steve Jobs</p>
-        </section>
-        <hr>
-        <section class="review">
-            <h3>Shrek (2007)</h3>
-            <img src="image/shrek.jpg" alt="shrek" style="width:15%; height:15%;"> 
-            <p>Wataheeel, oh my gaddd, yeieyei</p>
-            <p><strong>Rating:</strong> 5/5</p>
-            <p><strong>Reviewer:</strong> Elon Musk</p>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="review card">
+                        <img src="image/into_the_spiderverse.png" alt="into_the_spiderverse" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Spider Man: Into the Spiderverse (2021)</h3>
+                            <p>Perfect! I enjoyed the movie</p>
+                            <p><strong>Rating:</strong> 4.5/5</p>
+                            <p><strong>Reviewer:</strong> Joe Rogan</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <div class="review card">
+                        <img src="image/prisoners.jpg" alt="prisoners" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Prisoners (2017)</h3>
+                            <p>Very exciting plot twist! I was confused at the end :(</p>
+                            <p><strong>Rating:</strong> 4/5</p>
+                            <p><strong>Reviewer:</strong> Steve Jobs</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <div class="review card">
+                        <img src="image/shrek.jpg" alt="shrek" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Shrek (2007)</h3>
+                            <p>Wataheeel, oh my gaddd, yeieyei</p>
+                            <p><strong>Rating:</strong> 5/5</p>
+                            <p><strong>Reviewer:</strong> Elon Musk</p>
+                        </div>
+                    </div>
+                </div>
+    
+=
+                <div class="col-md-4 mb-4">
+                    <div class="review card">
+                        <img src="image/into_the_spiderverse.png" alt="into_the_spiderverse" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Spider Man: Into the Spiderverse (2021)</h3>
+                            <p>Perfect! I enjoyed the movie</p>
+                            <p><strong>Rating:</strong> 4.5/5</p>
+                            <p><strong>Reviewer:</strong> Joe Rogan</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <div class="review card">
+                        <img src="image/prisoners.jpg" alt="prisoners" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Prisoners (2017)</h3>
+                            <p>Very exciting plot twist! I was confused at the end :(</p>
+                            <p><strong>Rating:</strong> 4/5</p>
+                            <p><strong>Reviewer:</strong> Steve Jobs</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <div class="review card">
+                        <img src="image/shrek.jpg" alt="shrek" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Shrek (2007)</h3>
+                            <p>Wataheeel, oh my gaddd, yeieyei</p>
+                            <p><strong>Rating:</strong> 5/5</p>
+                            <p><strong>Reviewer:</strong> Elon Musk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    
     <footer>
         <p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan</p>
         <!-- <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p> -->
     </footer>
+    <script src="js/bootstrap.js"></script>
 
 </body>
 </html>
