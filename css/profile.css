@@ -1,6 +1,9 @@
 #footer{
     color:aliceblue;
     height: 80px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 input.form-control{
