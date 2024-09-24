@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/1ab0a3d4c2.js" crossorigin="anonymous"></script>
     <link rel="icon" href="image/icons/favicon-16x16.png">
     <title>About - MovieTime</title>
 </head>
@@ -27,15 +28,19 @@
         </div>
     </header>
 
-    <main>
-        <h2>About MovieTime</h2>
-        <div class="quote">
-            <blockquote>Everybody has something that chews them up and, for me, that thing was always loneliness.<br> The cinema has the power to make you not feel lonely, even when you are.</blockquote>
-            <p>-<cite>Tom Hanks</cite></p>
-        </div>
 
+        <div class="container mt-5 pt-5">
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Everybody has something that chews them up and, for me, that thing was always loneliness.<br> The cinema has the power to make you not feel lonely, even when you are.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Tom Hanks 
+                </figcaption>
+            </figure>
+        </div>
         <hr>
-        <br>
+<!--         
         <p>This site is an assignment for the Web-developing (Front-end) discipline.</p>
         <p>Developed by <a href="https://github.com/bwjson">Khanapin Ernar</a>,  <a href="https://github.com/Marticat">Kurmet Adilzhan</a> and <a href="https://github.com/barcek2281">Zhunis Ayanat</a>.</p>
         <h3>Contact Information</h3>
@@ -78,11 +83,61 @@
                 <li>Personalized recommendations based on viewing history</li>
             </ul>
         </li>
-    </ul>
-	</main>
+    </ul> -->
+	
+    <div class="container pb-4">
+        <dl class="row">
+            <dt class="col-sm-3">Our project: </dt>
+            <dd class="col-sm-9">MovieTime - It web application, where every users from the internet, can read Information about a movies. </dd>
+        
+            <dt class="col-sm-3">Author of idea:</dt>
+            <dd class="col-sm-9">
+            <p>Kurmet Adilzhan, Zhunis Ayanat and Khanapin Ernar</p>
+            </dd>
+        
+            <dt class="col-sm-3">Another term</dt>
+            <dd class="col-sm-9">i am kinda tired to add something</dd>
+        </dl>
+    </div>
+    <hr>
+    <div class="container d-flex mb-5 pb-5">
+            <ul class="list-unstyled mx-auto">
+                <h3>Roadmap: </h3>
+                <li><strong>Phase 1: Initial Setup and Design (Completed)</strong>
+                    <ul>
+                        <li>Git init & Basic page structure</li>
+                        <li>Integration of movie listings and actor profiles</li>
+                    </ul>
+                </li>
+                <li><strong>Phase 2: CSS (In Progress)</strong>
+                    <ul>
+                        <li>Easy implementation of style</li>
+                    </ul>
+                </li>
+                <li><strong>Phase 3: Advanced Search and Filter (JS)</strong>
+                    <ul>
+                        <li>Full-text search with advanced filters</li>
+                        <li>Filter movies by genre, year, and rating</li>
+                        <li>Auth system: reg, log</li>
+                    </ul>
+                </li>
+                <li><strong>Phase 4: Responsibility (Bootstrap)</strong>
+                    <ul>
+                        <li>Responsive design for mobile and tablet users</li>
+                        <li>Optimization for fast loading times</li>
+                    </ul>
+                </li>
+                <li><strong>Phase 5: Community Features (Future Plans)</strong>
+                    <ul>
+                        <li>User forums and discussions</li>
+                        <li>Personalized recommendations based on viewing history</li>
+                    </ul>
+                </li>
+              </ul>
+    </div>
 
     
-    <footer id="footer" class="text-center mt-5 py-4 bg-dark">
+    <footer id="footer" class="footer navbar-fixed-bottom text-center mt-5 py-4 bg-dark">
 		<p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
 	</footer>
 
