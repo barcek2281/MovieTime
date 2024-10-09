@@ -6,11 +6,22 @@
     bottom: 0;
 }
 
-input.form-control{
+/* input.form-control{
     width: 400px;
 }
 
 #profilePreview{
     height: 150px;
     width: 150px;
+} */
+
+.mb-3{
+    align-content: center;
 }
+
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+

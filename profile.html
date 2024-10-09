@@ -6,8 +6,9 @@
     <meta name="description" content="Explore movies and discover the highest-paid actors in Hollywood.">
     <title>Profile - MovieTime</title>
     <!-- STYLE -->
-    <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/profile.css">
+    
     <!-- ICON -->
     <link rel="icon" href="image/icons/favicon-16x16.png">
 </head>
@@ -35,32 +36,47 @@
         <div class="row justify-content-center">
           <div class="col-md-8">
             <div class="card">
+              
               <div class="card-header text-center">
                 <h2>Profile Settings</h2>
               </div>
+
               <div class="card-body">
                 <div class="row">
-
-                  <div class="col-md-8">
-                    <form>
-                      <div class="mb-3">
+                  <div class="col-10 offset-md-1">
+                    
+                    <form id="regForm">
+                      <!-- USERNAME -->
+                      <div class="mb-3 ">
                         <label for="username" class="form-label">Username</label>
                         <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                        <span id="usernameError" class="error">username shoulde contain latin and digits. (3-16) </span>
                       </div>
-                      
+
+                      <!-- EMAIL ADDRESS -->
                       <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <span id="emailError" class="error">email address is not valid </span>
                       </div>
 
+                      <!-- PASSWORD -->
                       <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter new password">
+                        <input type="password" class="form-control" id="password" placeholder="Enter a password" required>
+                        <span id="passwordError" class="error">password should contain 8 char, one digit, one uppercase letter </span>
+                      </div>
+
+                      <!-- PASSWORD 2 -->
+                      <div class="mb-3">
+                        <label for="password2" class="form-label">Again password</label>
+                        <input type="password" class="form-control" id="password2" placeholder="Again enter the password" required>
+                        <span id="password2Error" class="error">passwords should be same  </span>
                       </div>
     
                       <!-- развитые мы люди (Ayanat) -->
                       <div class="mb-3">
-                        <label for="gender" class="form-label">Your gender</label>
+                        <label for="gender" class="form-label" required>Your gender</label>
                         <select multiple class="form-control" id="gender">
                           <option>Female</option>
                           <option>Male</option>
@@ -77,14 +93,6 @@
                   </div>
     
 
-                  <div class="col-md-4 text-center">
-                    <img id="profilePreview" src="image/icons/profile-icon-9.png" alt="Profile Picture">
-                    
-                    <div class="mt-3">
-                      <label for="profilePic" class="form-label">Profile Picture</label>
-                      <input class="form-control" type="file" id="profilePic" style="width: 100%;">
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -92,10 +100,11 @@
         </div>
       </div>
     
+      <!-- FOOTER -->
     <footer id="footer" class="text-center mt-5 py-4 bg-dark">
 		<p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
 	</footer>
-
-    <script src="js/bootstrap.js"></script>
+  <!-- <script src="js/bootstrap.js"></script> -->
+  <script src="js/formValidation.js"></script>
 </body>
 </html>
