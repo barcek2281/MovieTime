@@ -97,3 +97,16 @@ form.addEventListener('submit', function(event){
     }
 
 });
+
+function updateDateTime() {
+    const now = new Date();
+
+    const currentDateTime = now.toLocaleString();
+
+
+    document.querySelector('#datetime').textContent = "your date registration: " + currentDateTime;
+  }
+
+  // call the `updateDateTime` function every second
+  setInterval(updateDateTime, 1000);
+
