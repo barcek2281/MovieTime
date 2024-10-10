@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reviews - MovieTime</title>
-	<link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/reviews.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-
 </head>
 <body>
     <header id="main-header" class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
@@ -27,47 +25,19 @@
             </nav>
         </div>
     </header>
+    
     <main>
         <h2>Movie Reviews</h2>
         <div class="container">
+            <label for="background-color">Choose background color:</label>  
+            <select id="background-color" onchange="changeBackground(this.value)">
+                <option value="white">White</option>
+                <option value="lightgray">Light Gray</option>
+                <option value="lightblue">Light Blue</option>
+                <option value="lightyellow">Light Yellow</option>
+            </select>
+            <button onclick="changeRandomColor()" class="btn btn-primary ms-2">Change color randomly</button>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="review card">
-                        <img src="image/into_the_spiderverse.png" alt="into_the_spiderverse" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Spider Man: Into the Spiderverse (2021)</h3>
-                            <p>Perfect! I enjoyed the movie</p>
-                            <p><strong>Rating:</strong> 4.5/5</p>
-                            <p><strong>Reviewer:</strong> Joe Rogan</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-4 mb-4">
-                    <div class="review card">
-                        <img src="image/prisoners.jpg" alt="prisoners" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Prisoners (2017)</h3>
-                            <p>Very exciting plot twist! I was confused at the end :(</p>
-                            <p><strong>Rating:</strong> 4/5</p>
-                            <p><strong>Reviewer:</strong> Steve Jobs</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="col-md-4 mb-4">
-                    <div class="review card">
-                        <img src="image/shrek.jpg" alt="shrek" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Shrek (2007)</h3>
-                            <p>Wataheeel, oh my gaddd, yeieyei</p>
-                            <p><strong>Rating:</strong> 5/5</p>
-                            <p><strong>Reviewer:</strong> Elon Musk</p>
-                        </div>
-                    </div>
-                </div>
-    
-=
                 <div class="col-md-4 mb-4">
                     <div class="review card">
                         <img src="image/into_the_spiderverse.png" alt="into_the_spiderverse" class="card-img-top">
@@ -106,12 +76,36 @@
             </div>
         </div>
     </main>
-    
+
     <footer>
         <p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan</p>
-        <!-- <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p> -->
+        <p id="date-time"></p>
     </footer>
-    <script src="js/bootstrap.js"></script>
 
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scrip.js"></script> 
+    <script>
+        function changeRandomColor() {
+            const colors = ['#D3D3D3', '#ADD8E6', '#FFFFC5', '#FFFFFF']; // Предопределенные цвета
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        function changeBackground(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function formatDate(date) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
+            return date.toLocaleString('en-US', options);
+        }
+
+        function displayDateTime() {
+            const now = new Date();
+            document.getElementById('date-time').textContent = formatDate(now);
+        }
+
+        setInterval(displayDateTime, 1000);
+    </script>
 </body>
 </html>

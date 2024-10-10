@@ -8,30 +8,39 @@
     <title>News - MovieTime</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    
 </head>
 <body>
     <header id="main-header" class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
-		<a class="navbar-brand text-white ms-4" href="#" style="font-size: 20px;"><b>MovieTime</b></a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse me-4" id="navbarNav">
-			<nav id="main-nav me-4" class="navbar-nav ms-auto">
-				<a class="nav-item nav-link text-white" href="index.html">Home</a>
-				<a class="nav-item nav-link text-white" href="movies.html">Movies</a>
-				<a class="nav-item nav-link text-white" href="profile.html">Profile</a>
-				<a class="nav-item nav-link text-white" href="about.html">About</a>
-				<a class="nav-item nav-link text-white" href="reviews.html">Reviews</a>
-				<a class="nav-item nav-link text-white" href="news.html">News</a>
-			</nav>
-		</div>
-	</header>
+        <a class="navbar-brand text-white ms-4" href="#" style="font-size: 20px;"><b>MovieTime</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse me-4" id="navbarNav">
+            <nav id="main-nav me-4" class="navbar-nav ms-auto">
+                <a class="nav-item nav-link text-white" href="index.html">Home</a>
+                <a class="nav-item nav-link text-white" href="movies.html">Movies</a>
+                <a class="nav-item nav-link text-white" href="profile.html">Profile</a>
+                <a class="nav-item nav-link text-white" href="about.html">About</a>
+                <a class="nav-item nav-link text-white" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link text-white" href="news.html">News</a>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        
         <h2>Latest Movie News</h2>
 
         <div class="container pb-5">
+            
+            <label for="background-color">Choose background color:</label>
+            <select id="background-color" onchange="changeBackground(this.value)">
+                <option value="white">White</option>
+                <option value="lightgray">Light Gray</option>
+                <option value="lightblue">Light Blue</option>
+                <option value="lightyellow">Light Yellow</option>
+            </select>
+            <button onclick="changeRandomColor()" class="btn btn-primary ms-2">Change color randomly</button>
             <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -39,7 +48,7 @@
                             <img src="image/images.jpg" class="card-img-top" alt="Marvel Studios">
                             <div class="card-body">
                                 <h5 class="card-title">Marvel Studios Announces New Phase of MCU</h5>
-                                <p class="card-text">Marvel Studios has officially announced the next phase of the Marvel Cinematic Universe, introducing new heroes and exciting storylines. With a mix of fresh faces and returning favorites, the new phase promises to expand the MCU like never before. Fans are eagerly anticipating the upcoming releases, which include the highly anticipated "Celestial Guardians," the mysterious "Dark Horizon," and the return of fan-favorite characters in "Avengers: Reassemble." The future of the MCU looks brighter than ever!</p>
+                                <p class="card-text">Marvel Studios has officially announced the next phase of the Marvel Cinematic Universe, introducing new heroes and exciting storylines...</p>
                             </div>
                         </div>
                     </div>
@@ -48,7 +57,7 @@
                             <img src="image/boom.jpg" class="card-img-top" alt="Oscar Buzz">
                             <div class="card-body">
                                 <h5 class="card-title">Oscar Buzz: Top Contenders for Best Picture</h5>
-                                <p class="card-text">As awards season approaches, several films are generating buzz for the coveted Best Picture award. From powerful dramas to innovative comedies, this year's competition is fierce. Our top contenders include the emotionally charged "Echoes of Silence," the visually stunning "Aurora Nights," and the thought-provoking "Fragments of Truth." With predictions already flying, it's shaping up to be an exciting race to the Oscars.</p>
+                                <p class="card-text">As awards season approaches, several films are generating buzz for the coveted Best Picture award...</p>
                             </div>
                         </div>
                     </div>
@@ -57,7 +66,7 @@
                             <img src="image/vorpe.jpg" class="card-img-top" alt="Behind the Scenes">
                             <div class="card-body">
                                 <h5 class="card-title">Behind the Scenes: The Making of a Blockbuster</h5>
-                                <p class="card-text">The upcoming sci-fi epic "Stellar Horizon" is rumored to set a new standard in visual effects, with groundbreaking technology being used to create stunning, realistic space environments. The film, directed by the visionary filmmaker Sarah Harper, has already generated significant buzz in the industry. Early previews suggest that "Stellar Horizon" could be a game-changer in the world of cinema, pushing the boundaries of what’s possible on the big screen.</p>
+                                <p class="card-text">The upcoming sci-fi epic "Stellar Horizon" is rumored to set a new standard in visual effects...</p>
                             </div>
                         </div>
                     </div>
@@ -72,17 +81,38 @@
                 </button>
             </div>
         </div>
-          
-          
-          
     </main>
-<!-- я хз че тут написано, лень было сочинять(адиль) -->
+
     <footer>
         <p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
-        <!-- <p><a href="https://github.com/barcek2281/FrontEndAssigment" target="_blank">GitHub Repository</a></p> -->
+        <p id="date-time"></p>
     </footer>
-    <script src="js/bootstrap.js"></script>
 
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scrip.js"></script>
+
+
+    <script>
+        function changeRandomColor() {
+            const colors = ['#D3D3D3', '#ADD8E6', '#FFFFC5', '#FFFFFF'];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.body.style.backgroundColor = randomColor;
+        }
+
+        function changeBackground(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        function formatDate(date) {
+            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
+            return date.toLocaleString('en-US', options);
+        }
+
+        function displayDateTime() {
+            const now = new Date();
+            document.getElementById('date-time').textContent = formatDate(now);
+        }
+        setInterval(displayDateTime, 1000);
+    </script>
 </body>
 </html>
-
