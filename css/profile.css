@@ -25,3 +25,8 @@
     display: none;
 }
 
+.nav-link:focus {
+    background-color: #555;
+    outline: 2px solid #fff;
+  }
+
