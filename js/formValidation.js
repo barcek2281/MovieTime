@@ -1,54 +1,10 @@
-// function validateForm(){
-//     let username = document.forms["form"]["username"].value;
-//     let email = document.forms["form"]["email"].value;
-//     let password = document.forms["form"]["password"].value;
-//     let password2 = document.forms["form"]["password2"].value;
-
-//     // regex
-//     const reEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     const reUsername = /^[a-zA-Z0-9]{3,16}$/;
-//     const rePassword = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@#$%^&+=!]{8,}$/;
-
-//     // Error message
-//     let errorMesaage = [];
-
-//     if (username.length < 5){
-//         errorMesaage.push("username should be more than 4!");
-//     }
-
-//     if (!reUsername.test(username)){
-//         errorMesaage.push("username should contain only latin alph and digits")
-//     }
-
-//     if (email < 1 || !reEmail.test(email)){
-//         errorMesaage.push("email is not valid!")
-//     }
-
-//     if (password.length < 7){
-//         errorMesaage.push("password should be more than or equal 8!");
-//     }
-
-//     if(!rePassword.test(password)){
-//         errorMesaage.push("password is not valid")
-//     }
-
-//     if (!(password === password2)){
-//         errorMesaage.push("passwords shoudl be equal!")
-//     }
-
-//     if (errorMesaage.length > 0){
-//         alert(errorMesaage.join("\n"))
-//         return false;
-//     }
-
-//     return true;
-// }
-
 const reEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 const reUsername = /^[a-zA-Z0-9]{3,16}$/;
 const rePassword = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d@#$%^&+=!]{8,}$/;
 
 const form = document.getElementById("regForm");
+const resetik = document.getElementById("resetik");
+
 
 form.addEventListener('submit', function(event){
     let isValid = true;
@@ -98,6 +54,17 @@ form.addEventListener('submit', function(event){
 
 });
 
+form.addEventListener('resetik', function(event){
+    document.querySelectorAll('input').forEach(input =>
+        input.value = '')
+});
+
+resetik.addEventListener("click", function(event){
+    form.dispatchEvent(new CustomEvent("resetik"));
+});
+
+  
+
 function updateDateTime() {
     const now = new Date();
 
@@ -105,8 +72,7 @@ function updateDateTime() {
 
 
     document.querySelector('#datetime').textContent = "your date registration: " + currentDateTime;
-  }
+};
 
-  // call the `updateDateTime` function every second
-  setInterval(updateDateTime, 1000);
+setInterval(updateDateTime, 1000);
 
