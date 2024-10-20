@@ -29,3 +29,31 @@
 .star.filled {
     color: gold;
 }
+/* adil changes next */
+/* popup */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.popup.show .popup-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* grad */
+body {
+    background: linear-gradient(to bottom, #1a1a1a, #007bff);
+    background-attachment: fixed;
+    transition: background 0.5s ease;
+    min-height: 100vh; 
+}

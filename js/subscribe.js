@@ -15,3 +15,26 @@ const subscribeBtn = document.getElementById('subscribe-btn');
                 popup.style.display = 'none';
             }
         });
+        // adil changes next
+const clickSound = document.getElementById('click-sound');
+const hoverSound = document.getElementById('hover-sound');
+
+// sub sound
+subscribeBtn.addEventListener('click', () => {
+    clickSound.play();
+    popup.style.display = 'flex';
+});
+
+//card sound
+const cards = document.querySelectorAll('.card');
+cards.forEach(card => {
+    card.addEventListener('mouseover', () => hoverSound.play());
+});
+subscribeBtn.addEventListener('click', () => {
+    popup.classList.add('show');
+    clickSound.play();
+});
+
+closeBtn.addEventListener('click', () => {
+    popup.classList.remove('show');
+});
