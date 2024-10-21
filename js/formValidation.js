@@ -37,20 +37,30 @@ form.addEventListener('submit', function(event){
         passwordError.style.display = 'block';
         isValid = false;
     }else{
-        password.style.display = 'none';
+        passwordError.style.display = 'none';
     }
 
     if (!(password === password2)){
         password2Error.style.display = 'block';
         isValid = false;
     }else{
-        password2.style.display = 'none';
+        password2Error.style.display = 'none';
     }
 
 
     if(!isValid){
         event.preventDefault();
     }
+
+    const response =  fetch("http://127.0.0.1:5500/profile.html/api/",
+        {
+            method: "POST",
+            body: true
+        }
+    );
+
+    // const result = response.json();
+
 
 });
 

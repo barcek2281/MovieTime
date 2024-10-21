@@ -1,0 +1,24 @@
+{
+  "name": "frontend-project.github.io",
+  "version": "1.0.0",
+  "description": "## MovieTime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barcek2281/frontend-project.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barcek2281/frontend-project.github.io/issues"
+  },
+  "homepage": "https://github.com/barcek2281/frontend-project.github.io#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1"
+  }
+}
