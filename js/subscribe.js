@@ -38,3 +38,14 @@ subscribeBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     popup.classList.remove('show');
 });
+
+const buttonSound = document.getElementById('button-sound');
+const myButton = document.getElementById('my-button');
+
+
+myButton.addEventListener('click', () => {
+    buttonSound.currentTime = 0; 
+    buttonSound.play().catch(error => {
+        console.error('Ошибка воспроизведения звука:', error);
+    });
+});
