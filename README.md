@@ -7,14 +7,27 @@ Our project is a frontend web application that provides users with comprehensive
 - CSS
 - JS
 
-## installation
+## installation :arrow_down:
 ```
   git clone https://github.com/barcek2281/frontend-project.github.io.git
 ```
 then open `index.html`
 
-## preview
-
+## Preview :eyes:
+Homepage:
+<br>
+<br>
+<img src="image/Screenshotfrom2024-10-2622-29-25.png" style="width:600px">
+<br>
+<br>
+Movies page:
+<br>
+<img src="image/Screenshotfrom2024-10-2622-35-17.png" style="width:600px">
+<br>
+<br>
+profile registration page:
+<br>
+<img src="image/Screenshotfrom2024-10-2622-35-40.png" style="width:600px">
 
 
 ### Participants :busts_in_silhouette:
