@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Marvel movies and discover the highest-paid actors in Hollywood.">
     <title>Movies - MovieTime</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXhW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="image/icons/favicon-16x16.png">
 </head>
@@ -13,104 +13,68 @@
     <header id="main-header" class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
         <a class="navbar-brand text-white ms-4" href="index.html" style="font-size: 20px;"><b>MovieTime</b></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse me-4" id="navbarNav">
-          <nav id="main-nav" class="navbar-nav ms-auto">
-            <a class="nav-item nav-link text-white" href="index.html">Home</a>
-            <a class="nav-item nav-link text-white" href="movies.html">Movies</a>
-            <a class="nav-item nav-link text-white" href="profile.html">Profile</a>
-            <a class="nav-item nav-link text-white" href="about.html">About</a>
-            <a class="nav-item nav-link text-white" href="reviews.html">Reviews</a>
-            <a class="nav-item nav-link text-white" href="news.html">News</a>
-          </nav>
+            <nav id="main-nav" class="navbar-nav ms-auto">
+                <a class="nav-item nav-link text-white" href="index.html">Home</a>
+                <a class="nav-item nav-link text-white" href="movies.html">Movies</a>
+                <a class="nav-item nav-link text-white" href="profile.html">Profile</a>
+                <a class="nav-item nav-link text-white" href="about.html">About</a>
+                <a class="nav-item nav-link text-white" href="reviews.html">Reviews</a>
+                <a class="nav-item nav-link text-white" href="news.html">News</a>
+
+                <!-- Профиль -->
+                <span id="username-display" class="nav-item nav-link text-white" style="display: none;font-weight: 500;"></span>
+                <a id="login-link" class="nav-item nav-link text-white" href="#" style="display: none;">| Login</a>
+                <a id="logout-link" class="nav-item nav-link text-white" href="#" style="display: none;">| Logout</a>
+            </nav>
         </div>
-      </header>
+    </header>
 
     <main id="main-content" class="container mt-5 pt-5">
-		<div class="text-center mb-5">
-        <h2 class="display-4">Покупайте подписку</h2>
-        <p class="lead">Подписка дает доступ к уникальным фильмам и сериалам!</p>
-        <button id="subscribe-btn" class="btn btn-primary">Подписаться</button>
-    </div>
-
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <span class="close-btn" id="close-btn">&times;</span>
-            <h3>Subscription</h3>
-            <form>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Enter your email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
+        <div class="text-center mb-5">
+            <h2 class="display-4">Покупайте подписку</h2>
+            <p class="lead">Подписка дает доступ к уникальным фильмам и сериалам!</p>
+            <button id="subscribe-btn" class="btn btn-primary">Подписаться</button>
         </div>
-    </div>
 
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <h3>Subscription</h3>
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Enter your email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
 
-		<div class="advantages">
-			<h3 class="mb-4">Преимущества подписки:</h3>
-			<ul class="list-unstyled">
-				<li class="advantage-item">Неограниченный доступ к фильмам и сериалам</li>
-				<li class="advantage-item">Эксклюзивные премьеры и контент</li>
-				<li class="advantage-item">Отсутствие рекламы</li>
-				<li class="advantage-item">Доступ на любых устройствах</li>
-				<li class="advantage-item">Персонализированные рекомендации</li>
-			</ul>
-		</div>
-	</main>
+        <div class="advantages">
+            <h3 class="mb-4">Преимущества подписки:</h3>
+            <ul class="list-unstyled">
+                <li class="advantage-item">Неограниченный доступ к фильмам и сериалам</li>
+                <li class="advantage-item">Эксклюзивные премьеры и контент</li>
+                <li class="advantage-item">Отсутствие рекламы</li>
+                <li class="advantage-item">Доступ на любых устройствах</li>
+                <li class="advantage-item">Персонализированные рекомендации</li>
+            </ul>
+        </div>
+    </main>
 
-	<section class="faq">
-		<div class="faq-item">
-			<div class="faq-question">
-				<span>Question 1: What is MovieTime?</span>
-				<span class="arrow">▼</span>
-			</div>
-			<div class="faq-answer">
-				<p>Answer: MovieTime is a subscription service that provides access to a vast library of movies and series.</p>
-			</div>
-		</div>
-		<div class="faq-item">
-			<div class="faq-question">
-				<span>Question 2: How can I cancel my subscription?</span>
-				<span class="arrow">▼</span>
-			</div>
-			<div class="faq-answer">
-				<p>Answer: You can cancel your subscription at any time through your account settings.</p>
-			</div>
-		</div>
-		<div class="faq-item">
-			<div class="faq-question">
-				<span>Question 3: Can I watch on multiple devices?</span>
-				<span class="arrow">▼</span>
-			</div>
-			<div class="faq-answer">
-				<p>Answer: Yes, you can watch movies and series simultaneously on multiple devices.</p>
-			</div>
-		</div>
-		<div class="faq-item">
-			<div class="faq-question">
-				<span>Question 4: Are there any exclusive content offerings?</span>
-				<span class="arrow">▼</span>
-			</div>
-			<div class="faq-answer">
-				<p>Answer: Yes, subscribers have access to exclusive premieres and content not available to non-subscribers.</p>
-			</div>
-		</div>
-    </section>
-	<button id="my-button" class="btn btn-primary">Нажми меня</button>
-	<audio id="button-sound" src="sounds/button-click.mp3"></audio>
-	
-	<footer id="main-footer" class="text-center mt-5 py-4 bg-dark">
-		<p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
-	</footer>
-	<audio id="click-sound" src="sounds/click.mp3"></audio>
-	<audio id="hover-sound" src="sounds/hover.mp3"></audio>	
-	<audio id="button-sound" src="sounds/button-click.mp3"></audio>
-	<script src="js/faq.js"></script>
-	<script src="js/subscribe.js"></script>
-	<script src="js/navBar.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <footer id="main-footer" class="text-center mt-5 py-4 bg-dark">
+        <p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="js/faq.js"></script>
+    <script src="js/subscribe.js"></script>
+    <script src="js/navBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Inline JavaScript for Login/Logout Functionality -->
 </body>
 </html>
