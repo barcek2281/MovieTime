@@ -52,12 +52,7 @@ form.addEventListener('submit', function(event){
         event.preventDefault();
     }
 
-    const response =  fetch("http://127.0.0.1:5500/profile.html",
-        {
-            method: "POST",
-            body: true
-        }
-    );
+    localStorage.setItem('username', username.value);
 
     // const result = response.json();
 
