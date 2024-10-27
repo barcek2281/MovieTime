@@ -81,3 +81,47 @@ img.content-img {
     height: 270px;
 }
 
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+/*debug of index.html */ 
+/* Стили для светлого режима */
+body.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.advantages {
+    color: #000000; 
+}
+
+body.dark .advantages {
+    background-color: #dadada; 
+    color: #000000; 
+}
+/* dubug movies
+.card-body {
+    color: #000000; 
+}
+
+body.dark .card-body {
+    background-color: #333333; 
+    color: #000000; 
+} */
+body.dark .faq-question {
+    background-color: #7c7c7c;
+    color: #ffffff; 
+}
+body.dark .faq-answer {
+    background-color: #6b6b6b;
+    color: #ffffff; 
+}
+body.dark .faq {
+    background-color: #383838;
+}

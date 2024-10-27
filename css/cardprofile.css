@@ -1,0 +1,16 @@
+.card-body {
+    color: #000000; 
+}
+
+body.dark .card-body {
+    background-color: #424242; 
+    color: #ffffff; 
+}
+
+body.dark .card {
+    background-color: #272727; 
+    color: #ffffff; 
+}
+body.dark .card-text {
+    color: #ffffff; 
+}
