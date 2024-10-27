@@ -8,7 +8,6 @@
     <title>News - MovieTime</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
 </head>
 <body>
     <header id="main-header" class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
@@ -17,7 +16,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse me-4" id="navbarNav">
-            <nav id="main-nav me-4" class="navbar-nav ms-auto">
+            <nav id="main-nav" class="navbar-nav ms-auto">
                 <a class="nav-item nav-link text-white" href="index.html">Home</a>
                 <a class="nav-item nav-link text-white" href="movies.html">Movies</a>
                 <a class="nav-item nav-link text-white" href="profile.html">Profile</a>
@@ -30,9 +29,7 @@
 
     <main>
         <h2>Latest Movie News</h2>
-
         <div class="container pb-5">
-            
             <label for="background-color">Choose background color:</label>
             <select id="background-color" onchange="changeBackground(this.value)">
                 <option value="white">White</option>
@@ -89,18 +86,26 @@
     </footer>
 
     <script src="js/bootstrap.js"></script>
-    <script src="js/scrip.js"></script>
-
 
     <script>
         function changeRandomColor() {
             const colors = ['#D3D3D3', '#ADD8E6', '#FFFFC5', '#FFFFFF'];
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             document.body.style.backgroundColor = randomColor;
+            localStorage.setItem('backgroundColor', randomColor);
         }
 
         function changeBackground(color) {
             document.body.style.backgroundColor = color;
+            localStorage.setItem('backgroundColor', color);
+        }
+
+        function loadBackgroundColor() {
+            const savedColor = localStorage.getItem('backgroundColor');
+            if (savedColor) {
+                document.body.style.backgroundColor = savedColor;
+                document.getElementById('background-color').value = savedColor;
+            }
         }
 
         function formatDate(date) {
@@ -112,7 +117,9 @@
             const now = new Date();
             document.getElementById('date-time').textContent = formatDate(now);
         }
+
         setInterval(displayDateTime, 1000);
+        window.onload = loadBackgroundColor;
     </script>
 </body>
 </html>

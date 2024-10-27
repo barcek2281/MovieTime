@@ -40,7 +40,7 @@ form.addEventListener('submit', function(event){
         passwordError.style.display = 'none';
     }
 
-    if (!(password === password2)){
+    if (!(toString(password) === toString(password2))){
         password2Error.style.display = 'block';
         isValid = false;
     }else{
@@ -73,7 +73,7 @@ resetik.addEventListener("click", function(event){
     form.dispatchEvent(new CustomEvent("resetik"));
 });
 
-  
+
 
 function updateDateTime() {
     const now = new Date();

@@ -13,16 +13,23 @@ setInterval(showDateTime, 1000); //update time every time
 //adil changes next
 // grad change
 window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const maxScroll = document.body.scrollHeight - window.innerHeight;
-    const scrollPercentage = scrollTop / maxScroll;
+    const scrollTop = window.scrollY; // Current scroll position
+    const maxScroll = document.body.scrollHeight - window.innerHeight; // Maximum scrollable height
+    const scrollPercentage = Math.min(scrollTop / maxScroll, 1); // Calculate scroll percentage, clamped to 1
 
-    const startColor = `rgba(26, 26, 26, ${1 - scrollPercentage})`; // dark
-    const endColor = `rgba(0, 123, 255, ${scrollPercentage})`; //blue
+    // Define the start and end colors
+    const startColor = [30, 30, 30]; // Dark gray
+    const endColor = [0, 150, 255]; // Bright blue
 
-    //apply grad to backgr
-    document.body.style.background = `linear-gradient(to bottom, ${startColor}, ${endColor})`;
+    // Interpolate the color based on the scroll percentage
+    const r = Math.round(startColor[0] + (endColor[0] - startColor[0]) * scrollPercentage);
+    const g = Math.round(startColor[1] + (endColor[1] - startColor[1]) * scrollPercentage);
+    const b = Math.round(startColor[2] + (endColor[2] - startColor[2]) * scrollPercentage);
+
+    // Apply the background color
+    document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const hoverSound = document.getElementById('hover-sound');
     const cards = document.querySelectorAll('.card');
