@@ -5,6 +5,7 @@ Our project is a frontend web application that provides users with comprehensive
 ## Technologies :tv:
 - HTML
 - CSS
+- Bootstrap
 - JS
 
 ## installation :arrow_down:
