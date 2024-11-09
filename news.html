@@ -7,7 +7,7 @@
     <link rel="icon" href="image/icons/favicon-16x16.png">
     <title>News - MovieTime</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/cardprofile.css">
 </head>
@@ -34,9 +34,9 @@
         </div>
     </header>
 
-    <main>
+    <main class="container mt-5 pt-5">
         <h2>Latest Movie News</h2>
-        <div class="container pb-5">
+            
             <label for="background-color">Choose background color:</label>
             <select id="background-color" onchange="changeBackground(this.value)">
                 <option value="white">White</option>
@@ -85,11 +85,20 @@
                 </button>
             </div>
         </div>
+
+        <div class="container text-center mt-5 my-3">
+            <h1 class="mb-4">🐾 Cat Viewer</h1>
+            <button id="fetch-cat" class="btn btn-custom btn-lg">Get a Cat</button>
+            <div id="cat-container" class="mt-4">
+                <img id="cat-image" src="image/kittys.webp" alt="Random Cat" >
+            </div>
+        </div>
     </main>
 
     <footer>
         <p>All rights reserved. Team members: Ayanat, Ernar, Adilzhan (SE-2320)</p>
-        <p id="date-time"></p>
+        <!-- Зачем время выводить (Аянат)-->
+        <!-- <p id="date-time"></p> -->
     </footer>
 
     <script src="js/bootstrap.js"></script>
@@ -114,22 +123,11 @@
                 document.getElementById('background-color').value = savedColor;
             }
         }
-
-        function formatDate(date) {
-            const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
-            return date.toLocaleString('en-US', options);
-        }
-
-        function displayDateTime() {
-            const now = new Date();
-            document.getElementById('date-time').textContent = formatDate(now);
-        }
-
-        setInterval(displayDateTime, 1000);
         window.onload = loadBackgroundColor;
     </script>
 
     <script src="js/navBar.js"></script>
     <script src="js/theme-toggle.js"></script>
+    <script src="js/api.js"></script>
 </body>
 </html>

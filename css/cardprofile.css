@@ -14,3 +14,21 @@ body.dark .card {
 body.dark .card-text {
     color: #ffffff; 
 }
+
+.btn-custom {
+    background-color: #00b0f5; /* Initial orange background */
+    color: #fff; /* White text */
+    border: 3px solid #03abee; /* Orange border */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    background-color: #fff; /* White background */
+    color: #00b0f5; /* Orange text */
+    border-color: #00b0f5; /* Darker orange border */
+  }
+
+  .spinner-border {
+    vertical-align: middle;
+    margin-right: 5px;
+  }
